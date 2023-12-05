@@ -1,0 +1,249 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Caudex', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+
+  --text-primary-for-dark-mode:#F3F3F3;
+  --text-secondary-for-dark-mode:#B0B0B0;
+  --text-tertiary-for-dark-mode:#9F9F9F;
+
+  --background-primary-for-dark-mode:#06070D;
+  --background-secondary-for-dark-mode:#141622;
+
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #081A34 0%, #0C0E1A 50%);
+  --floating-image-background:#141622;
+  --portfolio-card-background: linear-gradient(93deg, #191C22 -1.28%, #292D36 99.56%);
+  --portfolio-category-tag:rgba(255, 255, 255, 0.06);
+  --toogle-background:#2C2E3B;
+  --service-card-hover:linear-gradient(191deg, rgba(0, 163, 255, 0.21) -15.1%, rgba(0, 17, 35, 0.44) 78.06%), #000A1A;
+
+  --border-line-one-for-dark-mode:#686868;
+
+  --primary-color-for-dark-mode:#00A3FF;
+
+  --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+  --button-in-portfolio-section:rgba(153, 218, 255, 0.75);
+
+  --navbar-shadow-color:rgba(0, 163, 255, 0.1);
+  --service-icon-color:#ffffff;
+  --service-card-shadow:rgba(185, 185, 185, 0.0);
+
+
+}
+body.light-mode {
+
+  --text-primary-for-dark-mode:#0A0911;
+  --text-secondary-for-dark-mode:#666666;
+  --text-tertiary-for-dark-mode:#A7A7A7;
+
+  --background-primary-for-dark-mode:#ffffff;
+  --background-secondary-for-dark-mode:#f6f6f6;
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #f3f6ff 0%, #f9fbff 50%);
+  --floating-image-background:#E8E8E8;
+  --portfolio-card-background:linear-gradient(143deg, #E1E1E1 5%, rgba(245, 245, 245, 0.50) 40%), #FFF;
+  --toogle-background:#e1e1e1;
+  --portfolio-category-tag:rgba(65, 65, 65,0.06);
+  --service-card-hover:linear-gradient(227deg, #C7D8FF 0%, rgba(230, 236, 250, 0.40) 90%), #f6f6f6;
+
+
+  --border-line-one-for-dark-mode:#cacaca;
+
+  --primary-color-for-dark-mode:#0941CF;
+
+  --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+  --button-in-portfolio-section:#CED9F5;
+
+  --navbar-shadow-color:rgba(168, 168, 168, 0.15);
+  --service-card-shadow:rgba(185, 185, 185, 0.25);
+  --service-icon-color:#0941cf;
+}
+
+  /* LARGE DEVICE SCREEN */
+  
+  @media (min-width: 1200px) {
+  
+  }
+  
+  
+  /* MEDIUM DEVICE SCREEN */
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  /* SMALL DEVICE SCREEN */
+  
+  @media (max-width: 767px) {
+    
+  .container { 
+    padding-left:20px !important;
+    padding-right: 20px !important;}
+
+  .navbar-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; 
+}
+
+.navbar-collapse.show {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* .navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+} */
+.navbar-nav {
+  flex-direction: column;
+  align-items:center;
+}
+
+.navbar-nav .nav-item .nav-link.selected::after{
+  display: none;
+  align-items: center;
+
+}
+.switch {
+  display: inline-block; /* Display elements in a line */
+}
+
+.conatainer-for-toogle-switch{
+position: relative;
+right:0;
+}
+
+.nav-item{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.nav-item .nav-link{
+  font-size: 20px;
+}
+
+.progress-wrap{
+  right:20px;
+}
+
+.all-it-starts{
+  font-size: 32px;
+
+}
+
+.container-for-hero-section-in-contact-page{
+  height: 200px;
+  margin-top: 52px;
+  background-size: cover;
+}
+
+.image-container-in-about{
+  padding-right: 12px;
+}
+
+
+/* HERO SECTION */
+
+/* CONTACT SECTION STARTS HERE */
+.parent-container-for-contact-section{
+    border-radius: 16px;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important; 
+
+  }
+  .container-for-number-and-email{
+    padding-left: 12px;
+  }
+  
+  .container-for-inputs{
+    padding-right: 12px;
+  }
+  .contact-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-section-heading-text{
+    font-size: 32px;
+  }
+  
+  .have-a-plan{
+    font-size: 20px;
+  }
+  
+  .say-hello-text{
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  
+  .send-message{
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .phone, .email {
+    font-size: 16px;
+  }
+  
+  .number, .email-id{
+    font-size: 16px;
+  
+  }
+  
+  
+  /* CONTACT SECTION ENDS HERE */
+  
+  /* FOOTER SECTION STARTS HERE */
+  .parent-container-for-footer{
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .follow-me-text{
+    font-size: 20px;
+  }
+  
+  .social-icon{
+   background-color: var(--button-in-portfolio-section)
+  }
+  
+  .social-icon:hover::before {
+    height: 100%;
+    background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+  
+  }
+  
+  .social-icon:hover {
+    transform: translateY(0px);
+  }
+  .social-icon:hover i {
+    color: #fff;
+  }
+  .social-icon i {
+    color:#0A0911;
+  }
+  .social-icon:hover:after {
+    transform: translate(0) scale(1.2);
+  }
+  
+
+
+
+
+  /* FOOTER SECTION ENDS HERE */
+  
+  }
